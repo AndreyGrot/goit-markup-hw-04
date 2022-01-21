@@ -50,6 +50,14 @@ img{
     max-width: 100%;
 }
 
+svg{
+    fill: currentColor;
+}
+
+.icon{
+    fill: currentColor;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -140,6 +148,18 @@ img{
 
 .contact .item:not(:last-child){
     margin-right: 50px;
+}
+
+.icon-envelope{
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+ 
+}
+
+.contact .link:hover .icon-envelope,
+.contact .link:focus .icon-envelope{
+    fill: var(--accent-color);
 }
 
 .contact .link{
@@ -250,17 +270,21 @@ img{
     margin-right: 0;
 }
 
-.benefits-list .item::before{
-    display: block;
-    content: "";
+.benefits-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 270px;
+    background-color: #F5F4FA;
 }
 
-.item.anten::before{
-    background-image: url(../images/main/anten.png);
+.advertising{
+    height: 70px;
+    width: 70px;
+
+    background-position: center;
 }
 
 .benefits-list .title{
@@ -425,6 +449,12 @@ img{
     text-decoration: none;
 }
 
+.join{
+    display: block;
+    margin-top: 72px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+}
 
 
 
