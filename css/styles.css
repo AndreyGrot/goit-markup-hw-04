@@ -150,27 +150,6 @@ svg{
     margin-right: 50px;
 }
 
-.icon-envelope{
-    height: 20px;
-    width: 20px;
-    object-position: initial;
-}
-
-.contact .link:hover .icon-envelope,
-.contact .link:focus .icon-envelope{
-    fill: var(--accent-color);
-}
-
-.icon-smartphone{
-    height: 20px;
-    width: 20px;
-}
-
-.contact .link:hover .icon-smartphone,
-.contact .link:focus .icon-smartphone{
-    fill: var(--accent-color);
-}
-
 .contact .link{
     display: block;
     padding-top: 32px;
@@ -190,6 +169,46 @@ svg{
     color: var(--accent-color);
     text-decoration: none;
 }
+
+.contact .link:hover .icon-envelope,
+.contact .link:focus .icon-envelope{
+    fill: var(--accent-color);
+}
+
+
+
+.envelope{
+    display: flex;
+    align-items: center;
+}
+
+.icon-envelope{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    object-position: initial;
+}
+
+.smartphone{
+    display: flex;
+}
+
+.icon-smartphone{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    object-position: initial;
+}
+
+
+.contact .link:hover .icon-smartphone,
+.contact .link:focus .icon-smartphone{
+    fill: var(--accent-color);
+}
+
+
+
+
 
 
 /*Герой*/
