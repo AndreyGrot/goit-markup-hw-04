@@ -94,6 +94,7 @@ svg{
 }
 
 .header-logo {
+
     margin-right: 93px;
 
     font-family: Raleway;
@@ -122,6 +123,7 @@ svg{
 }
 
 .site-nav .link{
+
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -133,12 +135,15 @@ svg{
 
     color: var(--primary-text-color);
     text-decoration: none;
+
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus{
+
     color: var( --accent-color);
     text-decoration: none;
+
 }
 
 .contact{
@@ -151,6 +156,7 @@ svg{
 }
 
 .contact .link{
+
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -162,16 +168,19 @@ svg{
 
     color: var(--secondary-text-color);
     text-decoration: none;
+
 }
 
 .contact .link:hover,
 .contact .link:focus{
+
     color: var(--accent-color);
     text-decoration: none;
 }
 
 .contact .link:hover .icon-envelope,
 .contact .link:focus .icon-envelope{
+
     fill: var(--accent-color);
 }
 
@@ -191,6 +200,7 @@ svg{
 
 .smartphone{
     display: flex;
+    align-items: center;
 }
 
 .icon-smartphone{
@@ -432,6 +442,17 @@ svg{
 }
 
 .team-social .item{
+    
+    border-radius: 50%;
+
+    box-shadow: none;
+}
+
+.team-social .item:not(:last-child){
+    margin-right: 10px;
+}
+
+.team-social .link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -441,28 +462,17 @@ svg{
 
     border-radius: 50%;
 
-    box-shadow: none;
-
     cursor: pointer;
 }
 
-.team-social .item:not(:last-child){
-    margin-right: 10px;
-}
-
-.team-social .item:hover,
-.team-social .item:focus{
+.team-social .link:hover,
+.team-social .link:focus{
     background-color: var(--accent-color);
 }
 
-.team-social .item:hover .team-icon,
-.team-social .item:focus .team-icon{
+.team-social .link:hover .team-icon,
+.team-social .link:focus .team-icon{
     fill: #ffffff;
-}
-
-
-.team-social .link{
-    display: block;
 }
 
 .team-icon{
@@ -487,6 +497,15 @@ svg{
 }
 
 .customers-list .item{
+    margin-right: 30px;
+    border-radius: 4px;
+}
+
+.customers-list .item:last-child{
+    margin-right: 0;
+}
+
+.customers-list .link{
 
     display: flex;
     justify-content: center;
@@ -499,25 +518,22 @@ svg{
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
-
-    cursor: pointer;
 }
 
-.customers-list .item:last-child{
-    margin-right: 0;
-}
+.customers-list .link:hover,
+.customers-list .link:focus{
 
-.customers-list .item:hover,
-.customers-list .item:focus{
     border-color: var(--accent-color);
 }
 
-.customers-list .item:hover .cliet-icon,
-.customers-list .item:focus .cliet-icon{
+.customers-list .link:hover .cliet-icon,
+.customers-list .link:focus .cliet-icon{
+    
     fill:var(--accent-color)
 }
 
 .cliet-icon{
+
     height: 60px;
     width: 106px;
 
@@ -578,14 +594,16 @@ svg{
 }
 
 .footer-list .map:hover,
-.footer-list .nav:hover,
-.footer-list .map:focus
-.footer-list .nav:focus{
+.footer-list .map:focus{
     color: var(--accent-color);
     text-decoration: none;
 }
 
-
+.footer-list .nav:focus,
+.footer-list .nav:hover{
+    color: var(--accent-color);
+    text-decoration: none;
+}
 
 .footer-join{
     display: inline-block;
